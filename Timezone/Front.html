@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Zone</title>
+    <link rel="stylesheet" href="clock css.css">
+	
+</head>
+<body>
+    <script>
+        setInterval(change_background, 1000 * 60 * 60);
+    
+        function change_background() {
+          var d = new Date();
+          var n = d.getHours();
+          console.log(n);
+          if (n == 23|| n < 7) {
+            document.body.className = "night";
+          } else {
+            document.body.className = "day";
+          }
+          console.log("test");
+        }
+    
+        change_background();
+        
+    </script>
+    <div class=""app-wrap>
+    </div>   
+   
+    <header>
+        <h1>Enter Location</h1>
+        <input type="text" autocomplete="off" id="search" class="search-box" placeholder="Search city../">
+    </header>
+    <main>
+      
+      <section class="location">
+        <div class ="city">Chennai, TN</div>
+        <div class ="date">Tuesday January 10th 2023</div>
+        <div class ="time">10:30 AM </div>
+      </section>
+    
+    </main>
+
+    <div id="clockContainer">
+		<div id="hour"></div>
+		<div id="minute"></div>
+		<div id="second"></div>
+	</div>
+</body>
+<script src="calc.js"></script>   
+</html>
