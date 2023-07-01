@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<header class="header">
+    <nav class="nav">
+      <a href="#" class="nav_logo">Pixel Perfection</a>
+
+      <ul class="nav_items">
+        <li class="nav_item">
+          <a href="/" class="nav_link">Home</a>
+          <a href="/about" class="nav_link">About us</a>
+          <a href="#" class="nav_link">My Images</a>
+          <a href="#" class="nav_link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <body>
+    <div class="enter">
+        <form action="/login" method="post">
+            <label>LOGIN</label><br>
+            <label>Enter Email</label>
+            <input type="email" name="uemail" id="uemail" placeholder="Enter Your Email Address" required><br><br>
+            <label>Enter Password</label>
+            <input type="password" name="upass" id="upass" placeholder="Enter Your password" required><br><br>
+            <button type="submit">Login</button>
+        </form> <br><br>
+        
+        <form action="/register" method="post">
+            <label>REGISTER</label><br>
+            <label>Username</label>
+            <input type="text" name="uname" id="uname" placeholder="Enter Your Full Name" required><br><br>
+            <label>Email Id</label>
+            <input type="email" name="uemail" id="uemail" placeholder="Enter Your Email Id" required><br><br>
+            <label>Phone Number</label>
+            <input type="text" name="pnumber" id="pnumber" placeholder="Enter Your Phone Number " required><br><br>
+            <label>Password</label>
+            <input type="password" name="upass" id="upass" placeholder="Enter Your password" required><br><br>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    {{msg}}
+    
+</body>
+</html>
