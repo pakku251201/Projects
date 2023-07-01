@@ -1,2 +1,2 @@
-This repository contains the projects i have created till date
+This repository contains the projects I have created till date
 
